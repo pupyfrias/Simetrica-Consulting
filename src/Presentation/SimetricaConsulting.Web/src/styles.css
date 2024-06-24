@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.snackbar-success {
+  --mdc-snackbar-container-color: #4caf50 !important;
+  --mdc-snackbar-supporting-text-color: white !important;
+  --mat-mdc-snack-bar-button-color: white !important;
+  white-space: pre-wrap
+}
+
+
+.snackbar-error {
+
+  --mdc-snackbar-container-color: #f44336 !important;
+  --mdc-snackbar-supporting-text-color: white !important;
+  --mat-mdc-snack-bar-button-color: white !important;
+  white-space: pre-wrap
+
+}
+
+.snackbar-warning {
+  --mdc-snackbar-container-color: #ff9800 !important;
+  --mdc-snackbar-supporting-text-color: white !important;
+  --mat-mdc-snack-bar-button-color: white !important;
+  white-space: pre-wrap
+}
+
+
+h2 {
+  margin: 0;
+}
+
+.mat-form-field {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.mat-form-field:first-child {
+  padding-right: 0;
+}
+ 
+input[matInput] {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+button[mat-raised-button] {
+  margin-top: 16px;
+  background-color: #E8EAF6;
+  color: #3F51B5;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+
+mat-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 16px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}

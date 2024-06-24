@@ -1,0 +1,30 @@
+<mat-nav-list>
+  <ng-container *ngIf="isLoggedIn(); else loggedOutLinks">
+    <a mat-list-item routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon color="primary">dashboard</mat-icon>
+      <span>Dashboard</span>
+    </a>
+    <a mat-list-item routerLink="/tasks" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon color="primary">task</mat-icon>
+      <span>Tasks</span>
+    </a>
+    <a mat-list-item routerLink="/projects" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon color="primary">folder</mat-icon>
+      <span>Projects</span>
+    </a>
+    <a mat-list-item routerLink="/admin/users" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" *ngIf="authService.getRole() === 'admin'">
+      <mat-icon color="primary">group</mat-icon>
+      <span>Users</span>
+    </a>
+  </ng-container>
+  <ng-template #loggedOutLinks>
+    <a mat-list-item routerLink="/auth/login" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon color="primary">login</mat-icon>
+      <span>Login</span>
+    </a>
+    <a mat-list-item routerLink="/auth/register" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon color="primary">person_add</mat-icon>
+      <span>Register</span>
+    </a>
+  </ng-template>
+</mat-nav-list>

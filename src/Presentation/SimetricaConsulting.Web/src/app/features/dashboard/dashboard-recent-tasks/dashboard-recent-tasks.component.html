@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>Recent Tasks</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let task of recentTasks" class="task-item">
+        <div matLine class="task-title">{{ task.title }}</div>
+        <div matLine class="task-description">{{ task.description }}</div>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

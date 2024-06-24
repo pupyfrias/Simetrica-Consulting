@@ -1,0 +1,12 @@
+
+
+.task-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.task-description {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.54);
+}
+

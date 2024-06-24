@@ -1,0 +1,21 @@
+.chart-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.chart-item {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas y grandes */
+  }
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}

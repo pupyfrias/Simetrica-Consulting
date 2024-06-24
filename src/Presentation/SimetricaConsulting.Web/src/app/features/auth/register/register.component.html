@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="register-card">
+    <div class="register-card-header">
+      <h2>Create Account</h2>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Enter your first name" formControlName="firstName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Enter your last name" formControlName="lastName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Choose a username" formControlName="userName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Enter your email" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password" formControlName="password">
+        <button type="button" matSuffix (click)="togglePasswordVisibility()">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Confirm Password</mat-label>
+        <input matInput [type]="hideConfirm ? 'password' : 'text'" placeholder="Confirm Password" formControlName="confirmPassword">
+        <button type="button" mat-icon-button matSuffix (click)="toggleConfirmPasswordVisibility()">
+          <mat-icon>{{hideConfirm ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="registerForm.hasError('passwordMismatch') && (registerForm.get('confirmPassword')?.touched || registerForm.get('confirmPassword')?.dirty)">
+          Passwords must match
+        </mat-error>
+      </mat-form-field>
+
+
+      <button style="width: -webkit-fill-available;"  mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">Register</button>
+    </form>
+  </div>
+</div>

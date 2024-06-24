@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button (click)="toggleSidenav.emit()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="flex-spacer"></span>
+  <ng-container *ngIf="isLoggedIn(); else loggedOut">
+    <button mat-button (click)="logout()">Logout</button>
+  </ng-container>
+  <ng-template #loggedOut>
+    <button mat-button routerLink="/auth/login">Login</button>
+    <button mat-button routerLink="/auth/register">Register</button>
+  </ng-template>
+</mat-toolbar>

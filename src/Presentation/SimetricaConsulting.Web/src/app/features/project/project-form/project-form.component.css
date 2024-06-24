@@ -1,0 +1,34 @@
+.project-detail-card {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center; /* Centra los campos del formulario */
+}
+
+.form-field {
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center; /* Centra el botón */
+}
+
+button {
+  width: auto; /* Asegura que el botón no se estire a todo el ancho disponible */
+}

@@ -1,0 +1,62 @@
+<mat-card class="task-detail-card">
+  <mat-card-title style="text-align: center">{{ isEditMode ? 'Edit Task' : 'New Task' }}</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="task-form">
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Title</mat-label>
+          <input matInput formControlName="title">
+          <mat-error *ngIf="taskForm.get('title')?.hasError('required')">Title is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Description</mat-label>
+          <textarea matInput formControlName="description"></textarea>
+          <mat-error *ngIf="taskForm.get('description')?.hasError('required')">Description is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Due Date</mat-label>
+          <input matInput [matDatepicker]="picker" formControlName="dueDate">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="taskForm.get('dueDate')?.hasError('required')">Due Date is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Priority</mat-label>
+          <mat-select formControlName="priorityId">
+            <mat-option *ngFor="let priority of priorities" [value]="priority.id">{{ priority.name }}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="taskForm.get('priorityId')?.hasError('required')">Priority is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="statusId">
+            <mat-option *ngFor="let status of statuses" [value]="status.id">{{ status.name }}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="taskForm.get('statusId')?.hasError('required')">Status is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row">
+        <mat-form-field appearance="fill" class="form-field">
+          <mat-label>Project</mat-label>
+          <mat-select formControlName="projectId">
+            <mat-option *ngFor="let project of projects" [value]="project.id">{{ project.name }}</mat-option>
+          </mat-select>
+          <mat-error *ngIf="taskForm.get('projectId')?.hasError('required')">Project is required</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-row form-actions">
+        <button mat-raised-button color="primary" type="submit" [disabled]="taskForm.invalid">
+          {{ isEditMode ? 'Update' : 'Create' }}
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

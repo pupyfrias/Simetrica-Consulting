@@ -1,0 +1,21 @@
+<mat-card *ngIf="user" class="user-detail-card">
+  <mat-card-header style="margin-bottom: 10px;">
+    <div mat-card-avatar class="user-avatar">
+      <mat-icon aria-hidden="false" aria-label="User icon">person</mat-icon>
+    </div>
+    <mat-card-title style="padding: 0;margin: 0;">{{ user.userName }}</mat-card-title>
+    <mat-card-subtitle style="padding: 0;">{{ user.email }}</mat-card-subtitle>
+  </mat-card-header >
+  <mat-divider></mat-divider>
+  <mat-card-content class="user-content">
+    <div class="user-detail">
+      <p><strong>First Name:</strong> {{ user.firstName }}</p>
+      <p><strong>Last Name:</strong> {{ user.lastName }}</p>
+      <p><strong>Roles:</strong> {{ user.roles.join(', ') }}</p>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="user-actions" align="end">
+    <button  style="margin-right: 10px;" mat-raised-button color="primary" [routerLink]="['/admin/users', user.id, 'edit']">Edit</button>
+    <button mat-raised-button  [routerLink]="['/admin/users']">Back to List</button>
+  </mat-card-actions>
+</mat-card>
