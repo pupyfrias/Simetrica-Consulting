@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="3.6.0" />
+    <PackageReference Include="MimeKit" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\SimetricaConsulting.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\SimetricaConsulting.Domain.csproj" />
+  </ItemGroup>
+
+                      
+
+</Project>

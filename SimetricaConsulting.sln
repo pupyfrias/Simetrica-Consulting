@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69A88FBB-C00F-48D8-973A-EFE3EF191456}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{757E2DCA-C67F-45AF-A4EC-A180D1272556}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Application", "src\Application\SimetricaConsulting.Application.csproj", "{8F0D492A-7D81-4C36-A561-9023203EC678}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{E8687D6E-234F-4680-91D4-0535B345C09E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Domain", "src\Domain\SimetricaConsulting.Domain.csproj", "{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{101F7948-0E14-4853-8FF2-96303A693A5A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Email", "src\Infrastructure\SimetricaConsulting.Intrastructure.Email\SimetricaConsulting.Email.csproj", "{23805E62-264F-424A-A761-DD40F6C4E082}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Identity", "src\Infrastructure\SimetricaConsulting.Intrastructure.Identity\SimetricaConsulting.Identity.csproj", "{413EA94C-34AD-4E96-9282-9E049A5778F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Persistence", "src\Infrastructure\SimetricaConsulting.Intrastructure.Persistence\SimetricaConsulting.Persistence.csproj", "{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A8104B62-DE77-4496-A960-613D2EE58533}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimetricaConsulting.Api", "src\Presentation\SimetricaConsulting.API\SimetricaConsulting.Api.csproj", "{2E2B0695-72FE-4A45-9B05-BA04568EB26C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FDE144C0-A5B1-488F-9030-A37F0F973E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimetriacaConsulting.Test", "test\SimetriacaConsulting.Test\SimetriacaConsulting.Test.csproj", "{51CEB40B-D6AD-4525-B67D-9E67D368FC46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F0D492A-7D81-4C36-A561-9023203EC678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0D492A-7D81-4C36-A561-9023203EC678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0D492A-7D81-4C36-A561-9023203EC678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0D492A-7D81-4C36-A561-9023203EC678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23805E62-264F-424A-A761-DD40F6C4E082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23805E62-264F-424A-A761-DD40F6C4E082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23805E62-264F-424A-A761-DD40F6C4E082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23805E62-264F-424A-A761-DD40F6C4E082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{413EA94C-34AD-4E96-9282-9E049A5778F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413EA94C-34AD-4E96-9282-9E049A5778F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413EA94C-34AD-4E96-9282-9E049A5778F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413EA94C-34AD-4E96-9282-9E049A5778F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2B0695-72FE-4A45-9B05-BA04568EB26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2B0695-72FE-4A45-9B05-BA04568EB26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2B0695-72FE-4A45-9B05-BA04568EB26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2B0695-72FE-4A45-9B05-BA04568EB26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51CEB40B-D6AD-4525-B67D-9E67D368FC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CEB40B-D6AD-4525-B67D-9E67D368FC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CEB40B-D6AD-4525-B67D-9E67D368FC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CEB40B-D6AD-4525-B67D-9E67D368FC46}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{757E2DCA-C67F-45AF-A4EC-A180D1272556} = {69A88FBB-C00F-48D8-973A-EFE3EF191456}
+		{8F0D492A-7D81-4C36-A561-9023203EC678} = {757E2DCA-C67F-45AF-A4EC-A180D1272556}
+		{E8687D6E-234F-4680-91D4-0535B345C09E} = {69A88FBB-C00F-48D8-973A-EFE3EF191456}
+		{33E2AE51-AF39-41E8-A7E0-0AF0290FECE8} = {E8687D6E-234F-4680-91D4-0535B345C09E}
+		{101F7948-0E14-4853-8FF2-96303A693A5A} = {69A88FBB-C00F-48D8-973A-EFE3EF191456}
+		{23805E62-264F-424A-A761-DD40F6C4E082} = {101F7948-0E14-4853-8FF2-96303A693A5A}
+		{413EA94C-34AD-4E96-9282-9E049A5778F4} = {101F7948-0E14-4853-8FF2-96303A693A5A}
+		{A3EAB72F-92FA-4BE2-AC4F-ADBDDD995A84} = {101F7948-0E14-4853-8FF2-96303A693A5A}
+		{A8104B62-DE77-4496-A960-613D2EE58533} = {69A88FBB-C00F-48D8-973A-EFE3EF191456}
+		{2E2B0695-72FE-4A45-9B05-BA04568EB26C} = {A8104B62-DE77-4496-A960-613D2EE58533}
+		{51CEB40B-D6AD-4525-B67D-9E67D368FC46} = {FDE144C0-A5B1-488F-9030-A37F0F973E43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F7C4828-DCA5-4747-98E6-EBC0C1D2AB62}
+	EndGlobalSection
+EndGlobal
